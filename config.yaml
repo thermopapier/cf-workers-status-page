@@ -15,7 +15,7 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-- id: proxmox # unique identifier
+  - id: proxmox # unique identifier
     name: Proxmox
     description: 'If this service is down, most services will be down as well.' # default=empty
     url: 'https://statuscodeproxy.vercel.app/get/https/65.21.35.149/8006' # URL to fetch
