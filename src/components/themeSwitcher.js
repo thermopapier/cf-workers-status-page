@@ -49,7 +49,7 @@ export default function ThemeSwitcher() {
 
   return (
     <button
-      className={`${buttonColor} rounded-full h-7 w-7 mr-4 focus:outline-none focus:ring-2 focus:ring-opacity-50`}
+      className={`${buttonColor} rounded-full h-7 w-7 focus:outline-none focus:ring-2 focus:ring-opacity-50`}
       onClick={changeTheme}
     >
       {darkmode ? sunIcon : moonIcon}
