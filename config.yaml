@@ -15,11 +15,10 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: gookie.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
+  - id: proxmox # unique identifier
+    name: Proxmox
+    description: 'If this service is down, most services will be down as well.' # default=empty
+    url: 'https://statuscodeproxy.vercel.app/get/https/65.21.35.149/8006' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
     linkable: false # should the titles be links to the service, default=true
