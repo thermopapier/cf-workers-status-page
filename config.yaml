@@ -51,7 +51,7 @@ monitors:
     name: Cloud
     url: 'https://statuscodeproxy.vercel.app/get/http/65.21.35.149/4402'
     method: GET
-    expectStatus: 200
+    expectStatus: 302
     followRedirect: true
     linkable: false 
 
