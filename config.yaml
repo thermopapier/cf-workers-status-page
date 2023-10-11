@@ -59,14 +59,14 @@ monitors:
     name: Code Server
     url: 'https://statuscodeproxy.vercel.app/get/http/65.21.35.149/4404'
     method: GET
-    expectStatus: 200
+    expectStatus: 302
     linkable: false 
 
   - id: jellyfin
     name: Jellyfin
     url: 'https://statuscodeproxy.vercel.app/get/http/65.21.35.149/8096'
     method: GET
-    expectStatus: 200
+    expectStatus: 302
     linkable: false 
 
   - id: protainer
