@@ -53,7 +53,7 @@
   }
 
   .tooltip {
-        /* @apply relative;*/
+    @apply relative;
   }
 
   .tooltip .content {
