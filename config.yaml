@@ -27,7 +27,7 @@ monitors:
   - id: npm
     name: Nginx Proxy Manager
     description: 'If the reverse proxy is down most URLs will be down as well.'
-    url: 'https://statuscodeproxy.vercel.app/get/http/51.158.62.196'
+    url: 'https://statuscodeproxy.vercel.app/get/http/107.189.2.163'
     method: GET
     expectStatus: 200
     linkable: false # allows the title to be a link, default=true
