@@ -82,6 +82,12 @@ monitors:
     method: GET
     expectStatus: 200
 
+  - id: baidugookiedev
+    name: baidu.gookie.dev
+    url: 'https://baidu.gookie.dev'
+    method: GET
+    expectStatus: 200
+    
   - id: bloggookiedev
     name: blog.gookie.dev
     url: 'https://blog.gookie.dev'
