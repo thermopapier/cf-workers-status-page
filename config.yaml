@@ -111,8 +111,8 @@ monitors:
     name: debrid.gookie.dev
     url: 'https://debrid.gookie.dev'
     method: GET
-    followRedirect: true
-    expectStatus: 200
+    followRedirect: false
+    expectStatus: 302
 
   - id: debridgookiedevauth01
     name: debridauth.gookie.dev
