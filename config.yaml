@@ -40,6 +40,13 @@ monitors:
     expectStatus: 200
     linkable: false # allows the title to be a link, default=true
 
+  - id: gauth
+    name: gAuth
+    url: 'https://statuscodeproxy.vercel.app/get/http/65.109.157.154/4409'
+    method: GET
+    expectStatus: 401
+    linkable: false 
+
   - id: cloud
     name: Cloud
     url: 'https://statuscodeproxy.vercel.app/get/http/65.109.157.154/4402'
@@ -53,20 +60,6 @@ monitors:
     url: 'https://statuscodeproxy.vercel.app/get/http/65.109.157.154/4404'
     method: GET
     expectStatus: 302
-    linkable: false 
-
-  - id: flacdlhost
-    name: flac-dl
-    url: 'https://statuscodeproxy.vercel.app/get/http/65.109.157.154/4410'
-    method: GET
-    expectStatus: 418
-    linkable: false 
-
-  - id: gauth
-    name: gAuth
-    url: 'https://statuscodeproxy.vercel.app/get/http/65.109.157.154/4409'
-    method: GET
-    expectStatus: 401
     linkable: false 
 
   - id: jellyfin
@@ -86,6 +79,12 @@ monitors:
   - id: apigookiedev
     name: api.gookie.dev
     url: 'https://api.gookie.dev'
+    method: GET
+    expectStatus: 200
+
+  - id: baidugookiedev
+    name: baidu.gookie.dev
+    url: 'https://baidu.gookie.dev'
     method: GET
     expectStatus: 200
     
@@ -128,12 +127,6 @@ monitors:
     method: GET
     expectStatus: 200
 
-  - id: iptvgookiedev
-    name: iptv.gookie.dev
-    url: 'https://iptv.gookie.dev'
-    method: GET
-    expectStatus: 200
-
   - id: jellyfingookiedev
     name: jellyfin.gookie.dev
     url: 'https://jellyfin.gookie.dev'
@@ -144,12 +137,6 @@ monitors:
   - id: npmgookiedev
     name: npm.gookie.dev
     url: 'https://npm.gookie.dev'
-    method: GET
-    expectStatus: 200
-
-    - id: portainergookiedev
-    name: portainer.gookie.dev
-    url: 'https://portainer.gookie.dev'
     method: GET
     expectStatus: 200
 
