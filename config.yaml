@@ -128,6 +128,12 @@ monitors:
     method: GET
     expectStatus: 200
 
+  - id: iptvgookiedevtest
+    name: iptv.gookie.dev
+    url: 'https://iptv.gookie.dev'
+    method: GET
+    expectStatus: 200
+
   - id: jellyfingookiedev
     name: jellyfin.gookie.dev
     url: 'https://jellyfin.gookie.dev'
