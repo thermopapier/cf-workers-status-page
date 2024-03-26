@@ -53,6 +53,13 @@ monitors:
     url: 'https://statuscodeproxy.vercel.app/get/http/65.109.157.154/4404'
     method: GET
     expectStatus: 302
+    linkable: false
+  
+  - id: flacdlhost
+    name: flac-dl
+    url: 'https://statuscodeproxy.vercel.app/get/http/65.109.157.154/4410'
+    method: GET
+    expectStatus: 418
     linkable: false 
 
   - id: gauth
@@ -79,12 +86,6 @@ monitors:
   - id: apigookiedev
     name: api.gookie.dev
     url: 'https://api.gookie.dev'
-    method: GET
-    expectStatus: 200
-
-  - id: baidugookiedev
-    name: baidu.gookie.dev
-    url: 'https://baidu.gookie.dev'
     method: GET
     expectStatus: 200
     
