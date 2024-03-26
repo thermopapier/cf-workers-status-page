@@ -40,13 +40,6 @@ monitors:
     expectStatus: 200
     linkable: false # allows the title to be a link, default=true
 
-  - id: gauth
-    name: gAuth
-    url: 'https://statuscodeproxy.vercel.app/get/http/65.109.157.154/4409'
-    method: GET
-    expectStatus: 401
-    linkable: false 
-
   - id: cloud
     name: Cloud
     url: 'https://statuscodeproxy.vercel.app/get/http/65.109.157.154/4402'
@@ -60,6 +53,13 @@ monitors:
     url: 'https://statuscodeproxy.vercel.app/get/http/65.109.157.154/4404'
     method: GET
     expectStatus: 302
+    linkable: false 
+
+  - id: gauth
+    name: gAuth
+    url: 'https://statuscodeproxy.vercel.app/get/http/65.109.157.154/4409'
+    method: GET
+    expectStatus: 401
     linkable: false 
 
   - id: jellyfin
