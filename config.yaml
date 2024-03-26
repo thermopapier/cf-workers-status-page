@@ -147,6 +147,12 @@ monitors:
     method: GET
     expectStatus: 200
 
+  - id: portainergookiedevhq
+    name: portainer.gookie.dev
+    url: 'https://portainer.gookie.dev'
+    method: GET
+    expectStatus: 200
+
   - id: proxmoxgookiedev
     name: proxmox.gookie.dev
     url: 'https://proxmox.gookie.dev'
