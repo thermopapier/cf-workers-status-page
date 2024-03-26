@@ -18,7 +18,7 @@ monitors:
   - id: proxmox # unique identifier
     name: Proxmox
     description: 'If this service is down, most services will be down as well.' # default=empty
-    url: 'https://statuscodeproxy.vercel.app/get/https/65.21.12.121/8006' # URL to fetch
+    url: 'https://statuscodeproxy.vercel.app/get/https/65.109.157.154/8006' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
@@ -40,16 +40,9 @@ monitors:
     expectStatus: 200
     linkable: false # allows the title to be a link, default=true
 
-  - id: gauth
-    name: gAuth
-    url: 'https://statuscodeproxy.vercel.app/get/http/65.21.12.121/4409'
-    method: GET
-    expectStatus: 401
-    linkable: false 
-
   - id: cloud
     name: Cloud
-    url: 'https://statuscodeproxy.vercel.app/get/http/65.21.12.121/4402'
+    url: 'https://statuscodeproxy.vercel.app/get/http/65.109.157.154/4402'
     method: GET
     expectStatus: 302
     followRedirect: true
@@ -57,21 +50,35 @@ monitors:
 
   - id: code
     name: Code Server
-    url: 'https://statuscodeproxy.vercel.app/get/http/65.21.12.121/4404'
+    url: 'https://statuscodeproxy.vercel.app/get/http/65.109.157.154/4404'
     method: GET
     expectStatus: 302
     linkable: false 
 
+  - id: flacdl
+    name: flac-dl
+    url: 'https://statuscodeproxy.vercel.app/get/http/65.109.157.154/4410'
+    method: GET
+    expectStatus: 418
+    linkable: false 
+
+  - id: gauth
+    name: gAuth
+    url: 'https://statuscodeproxy.vercel.app/get/http/65.109.157.154/4409'
+    method: GET
+    expectStatus: 401
+    linkable: false 
+
   - id: jellyfin
     name: Jellyfin
-    url: 'https://statuscodeproxy.vercel.app/get/http/65.21.12.121/8096'
+    url: 'https://statuscodeproxy.vercel.app/get/http/65.109.157.154/8096'
     method: GET
     expectStatus: 302
     linkable: false 
 
   - id: protainer
     name: Portainer
-    url: 'https://statuscodeproxy.vercel.app/get/http/65.21.12.121/4406'
+    url: 'https://statuscodeproxy.vercel.app/get/http/65.109.157.154/4406'
     method: GET
     expectStatus: 200
     linkable: false 
@@ -79,12 +86,6 @@ monitors:
   - id: apigookiedev
     name: api.gookie.dev
     url: 'https://api.gookie.dev'
-    method: GET
-    expectStatus: 200
-
-  - id: baidugookiedev
-    name: baidu.gookie.dev
-    url: 'https://baidu.gookie.dev'
     method: GET
     expectStatus: 200
     
@@ -127,6 +128,12 @@ monitors:
     method: GET
     expectStatus: 200
 
+  - id: iptvgookiedev
+    name: iptv.gookie.dev
+    url: 'https://iptv.gookie.dev'
+    method: GET
+    expectStatus: 200
+
   - id: jellyfingookiedev
     name: jellyfin.gookie.dev
     url: 'https://jellyfin.gookie.dev'
@@ -137,6 +144,12 @@ monitors:
   - id: npmgookiedev
     name: npm.gookie.dev
     url: 'https://npm.gookie.dev'
+    method: GET
+    expectStatus: 200
+
+    - id: portainergookiedev
+    name: portainer.gookie.dev
+    url: 'https://portainer.gookie.dev'
     method: GET
     expectStatus: 200
 
