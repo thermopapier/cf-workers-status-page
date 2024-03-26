@@ -55,7 +55,7 @@ monitors:
     expectStatus: 302
     linkable: false 
 
-  - id: flacdl
+  - id: flacdlhost
     name: flac-dl
     url: 'https://statuscodeproxy.vercel.app/get/http/65.109.157.154/4410'
     method: GET
