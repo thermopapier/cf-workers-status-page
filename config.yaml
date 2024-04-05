@@ -71,7 +71,7 @@ monitors:
 
   - id: iptvproxyz
     name: IPTV
-    url: 'https://statuscodeproxy.vercel.app/get/http/65.109.157.154/4407'
+    url: 'https://iptv.cinehub.wf/'
     method: GET
     expectStatus: 200
     linkable: false 
