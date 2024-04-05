@@ -69,6 +69,13 @@ monitors:
     expectStatus: 401
     linkable: false 
 
+  - id: iptvproxyz
+    name: gAuth
+    url: 'https://statuscodeproxy.vercel.app/get/http/65.109.157.154/4407'
+    method: GET
+    expectStatus: 200
+    linkable: false 
+
   - id: jellyfin
     name: Jellyfin
     url: 'https://statuscodeproxy.vercel.app/get/http/65.109.157.154/8096'
@@ -125,12 +132,6 @@ monitors:
   - id: drivegookiedev
     name: drive.gookie.dev
     url: 'https://drive.gookie.dev'
-    method: GET
-    expectStatus: 200
-
-  - id: iptvgookiedevtest
-    name: iptv.gookie.dev
-    url: 'https://iptv.gookie.dev'
     method: GET
     expectStatus: 200
 
