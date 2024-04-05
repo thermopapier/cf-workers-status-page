@@ -70,7 +70,7 @@ monitors:
     linkable: false 
 
   - id: iptvproxyz
-    name: gAuth
+    name: IPTV
     url: 'https://statuscodeproxy.vercel.app/get/http/65.109.157.154/4407'
     method: GET
     expectStatus: 200
