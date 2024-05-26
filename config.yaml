@@ -54,13 +54,6 @@ monitors:
     method: GET
     expectStatus: 302
     linkable: false
-  
-  - id: flacdlhost
-    name: flac-dl
-    url: 'https://statuscodeproxy.vercel.app/get/http/65.109.157.154/4410'
-    method: GET
-    expectStatus: 418
-    linkable: false 
 
   - id: gauth
     name: gAuth
@@ -163,5 +156,11 @@ monitors:
   - id: proxygookiedev
     name: proxy.gookie.dev
     url: 'https://proxy.gookie.dev'
+    method: GET
+    expectStatus: 200
+  
+  - id: studydrive
+    name: studydrive.gookie.dev
+    url: 'https://studydrive.gookie.dev'
     method: GET
     expectStatus: 200
