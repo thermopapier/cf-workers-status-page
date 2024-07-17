@@ -25,11 +25,11 @@ monitors:
     linkable: false # allows the title to be a link, default=true
 
   - id: npm
-    name: Nginx Proxy Manager
+    name: Reverse Proxy 1
     description: 'If the reverse proxy is down most URLs will be down as well.'
     url: 'https://statuscodeproxy.vercel.app/get/http/107.189.2.163'
     method: GET
-    expectStatus: 200
+    expectStatus: 404
     linkable: false # allows the title to be a link, default=true
 
   - id: scp
