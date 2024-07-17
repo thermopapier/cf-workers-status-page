@@ -24,12 +24,20 @@ monitors:
     followRedirect: true # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
-  - id: npm
-    name: Nginx Proxy Manager
+ - id: npm2
+    name: Reverse Proxy 1
     description: 'If the reverse proxy is down most URLs will be down as well.'
-    url: 'https://statuscodeproxy.vercel.app/get/http/107.189.2.163'
+    url: 'https://statuscodeproxy.vercel.app/get/http/107.189.2.163/80'
     method: GET
-    expectStatus: 200
+    expectStatus: 403
+    linkable: false # allows the title to be a link, default=true
+
+  - id: npm
+    name: Reverse Proxy 2
+    description: 'If the reverse proxy is down most URLs will be down as well.'
+    url: 'https://statuscodeproxy.vercel.app/get/http/107.189.5.69/80'
+    method: GET
+    expectStatus: 403
     linkable: false # allows the title to be a link, default=true
 
   - id: scp
@@ -60,20 +68,6 @@ monitors:
     url: 'https://statuscodeproxy.vercel.app/get/http/65.109.157.154/4409'
     method: GET
     expectStatus: 401
-    linkable: false 
-
-  - id: iptvproxyz
-    name: IPTV
-    url: 'https://iptv.cinehub.wf/'
-    method: GET
-    expectStatus: 200
-    linkable: false 
-
-  - id: jellyfin
-    name: Jellyfin
-    url: 'https://statuscodeproxy.vercel.app/get/http/65.109.157.154/8096'
-    method: GET
-    expectStatus: 302
     linkable: false 
 
   - id: protainer
@@ -128,16 +122,9 @@ monitors:
     method: GET
     expectStatus: 200
 
-  - id: jellyfingookiedev
-    name: jellyfin.gookie.dev
-    url: 'https://jellyfin.gookie.dev'
-    method: GET
-    followRedirect: true
-    expectStatus: 200
-
-  - id: npmgookiedev
-    name: npm.gookie.dev
-    url: 'https://npm.gookie.dev'
+  - id: pixel
+    name: pixeldrain.gookie.dev
+    url: 'https://pixeldrain.gookie.dev'
     method: GET
     expectStatus: 200
 
