@@ -32,6 +32,14 @@ monitors:
     expectStatus: 404
     linkable: false # allows the title to be a link, default=true
 
+  - id: npm
+    name: Reverse Proxy 2
+    description: 'If the reverse proxy is down most URLs will be down as well.'
+    url: 'https://statuscodeproxy.vercel.app/get/http/107.189.5.69'
+    method: GET
+    expectStatus: 404
+    linkable: false # allows the title to be a link, default=true
+
   - id: scp
     name: SCP
     description: 'If the status code proxy is down, most services will be down as well.'
