@@ -122,6 +122,12 @@ monitors:
     method: GET
     expectStatus: 200
 
+  - id: pixelentry
+    name: pixeldrain.gookie.dev
+    url: 'https://pixeldrain.gookie.dev'
+    method: GET
+    expectStatus: 418    
+
   - id: portainergookiedevhq
     name: portainer.gookie.dev
     url: 'https://portainer.gookie.dev'
